@@ -6,12 +6,12 @@ import MinhaDocumentacoes from "./components/pages/MinhaDocumentacoes";
 
 import Container from "./components/Layout/Container";
 import Footer from "./components/Layout/Footer";
-import Navbar from "./components/Layout/Navbar";
+import NavBar from "./components/Layout/NavBar";
 
 function App() {
   return (
     <Router>
-      <Navbar/>
+         <NavBar />
       <Container customClass='min-height'>
         <Routes>
           <Route exact path="/" element={<Home />} />

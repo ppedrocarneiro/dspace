@@ -1,36 +1,32 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-import Container from './Container'
+import Container from "./Container";
 
-import styles from './Navbar.module.css'
-import logo from '../../img/uniateneulogo.png'
+import styles from "./NavBar.module.css";
+import logo from "../../img/uniateneulogo.png";
 
-function Navbar(){
-return(
-    <nav class ={styles.navbar}>
-    <Container>
+function Navbar() {
+  return (
+    <nav className={styles.navbar}>
+      <Container>
         <Link to="/">
-            <img  class ={styles.img} src={logo} alt="Uniataneu"/>
+          <img className={styles.img} src={logo} alt="uniataneu" />
         </Link>
-   <ul class ={styles.list}>
-    <li>
-    <Link to="/">Home</Link>
-    </li>
-    <li>
-    <Link to="/documentacao">Documentacao</Link>
-    </li>
-    <li>
-    <Link to="/MinhasDocumentacoes">MinhaDocumentacoes</Link>
-    </li>
-   </ul>
-   </Container>
-  </nav>
- 
-)
+
+        <ul className={styles.list}>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/documentacao">Documentacao</Link>
+          </li>
+          <li>
+            <Link to="/MinhasDocumentacoes">MinhaDocumentacoes</Link>
+          </li>
+        </ul>
+      </Container>
+    </nav>
+  );
 }
 
-    
-    
-    
-    
-export default Navbar
+export default Navbar;
